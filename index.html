@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Name Generator</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext y='0.9em' font-size='32'%3E🐾%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Pet Name Generator</h1>
+    
+    <div class="card">
+      <label for="petType">Choose Pet Type:</label>
+      <select id="petType">
+        <option value="any">Any</option>
+        <option value="dog">Dog 🐶</option>
+        <option value="cat">Cat 🐱</option>
+        <option value="bird">Bird 🐦</option>
+      </select>
+
+      <button onclick="generateName()">🎲 Generate Name</button>
+
+      <div class="result" id="result">Your Pet Name will appear here...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
